@@ -12,6 +12,8 @@
 		20959C4D1F5D3C79004DB785 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20959C4C1F5D3C79004DB785 /* Assets.xcassets */; };
 		20959C501F5D3C79004DB785 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20959C4E1F5D3C79004DB785 /* LaunchScreen.storyboard */; };
 		20959C591F5D3D8A004DB785 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20959C581F5D3D8A004DB785 /* ImageViewController.swift */; };
+		20959C5B1F5D6C05004DB785 /* DemoURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20959C5A1F5D6C05004DB785 /* DemoURL.swift */; };
+		20959C5D1F5D83C7004DB785 /* PicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20959C5C1F5D83C7004DB785 /* PicsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		20959C4F1F5D3C79004DB785 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20959C511F5D3C79004DB785 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20959C581F5D3D8A004DB785 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		20959C5A1F5D6C05004DB785 /* DemoURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoURL.swift; sourceTree = "<group>"; };
+		20959C5C1F5D83C7004DB785 /* PicsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +60,9 @@
 			children = (
 				20959C491F5D3C79004DB785 /* Main.storyboard */,
 				20959C581F5D3D8A004DB785 /* ImageViewController.swift */,
+				20959C5C1F5D83C7004DB785 /* PicsViewController.swift */,
 				20959C511F5D3C79004DB785 /* Info.plist */,
+				20959C5A1F5D6C05004DB785 /* DemoURL.swift */,
 				20959C571F5D3CC8004DB785 /* Assets */,
 			);
 			path = Imager;
@@ -145,7 +151,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				20959C591F5D3D8A004DB785 /* ImageViewController.swift in Sources */,
+				20959C5D1F5D83C7004DB785 /* PicsViewController.swift in Sources */,
 				20959C461F5D3C79004DB785 /* AppDelegate.swift in Sources */,
+				20959C5B1F5D6C05004DB785 /* DemoURL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
