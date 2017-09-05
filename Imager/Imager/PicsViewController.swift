@@ -8,12 +8,17 @@
 
 import UIKit
 
-class PicsViewController: UIViewController {
+class PicsViewController: UIViewController, UISplitViewControllerDelegate {
 
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.splitViewController?.delegate = self
+        
+    }
+    
     
     // MARK: - Navigation
 
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if let url = DemoURL.PICS[segue.identifier ?? ""]{
@@ -29,6 +34,25 @@ class PicsViewController: UIViewController {
         }
         
     }
+    
+    
+    func splitViewController(_ splitViewController: UISplitViewController,
+                             collapseSecondary secondaryViewController: UIViewController,
+                             onto primaryViewController: UIViewController
+    ) -> Bool {
+        
+        if primaryViewController.contents == self {
+            
+            if let ivc = secondaryViewController.contents as? ImageViewController, ivc.imageURL == nil {
+                
+                return true
+                
+            }
+        
+        }
+        return false
+    }
+    
     
 
 }
